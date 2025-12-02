@@ -1,16 +1,16 @@
 
 # Maintainer: BharatOS <osBharat@proton.me>
-pkgname="Arc-Dark-Purple-BharatOS"
+pkgname="arc-dark-purple-bharatos"
 pkgver="1.0.0"
 pkgrel=1
 pkgdesc="Arc Dark theme the Purple version for BharatOS"
 arch=("any")
 url="https://github.com/jnsh/arc-theme"
 license=("GPL3")
-source=("${pkgname}.tar.gz")
+source=("Arc-Dark-Purple-BharatOS.tar.gz")
 sha256sums=("SKIP")
 
 package() {
 	install -d "${pkgdir}/usr/share/themes/"  ## creates the target directory
-	cp -a "${srcdir}/${pkgname}" "${pkgdir}/usr/share/themes/" ## copies directories recursively with permissions preserved
+	cp -a "${srcdir}/Arc-Dark-Purple-BharatOS/" "${pkgdir}/usr/share/themes/" ## copies directories recursively with permissions preserved
 }
